@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS status (
+            status_code VARCHAR(5) PRIMARY KEY,
+            status_message TEXT NOT NULL,
+            share_with ENUM('University', 'Class', 'Private') NOT NULL,
+            date DATE NOT NULL,
+            permissions TEXT
+);
+
+SELECT * FROM status WHERE status_code = ?;
+
+INSERT INTO status (status_code, status_message, share_with, date, permissions) VALUES (?, ?, ?, STR_TO_DATE(?, '%d/%m/%Y'), ?);
+
+DROP TABLE IF EXISTS status;
+
+INSERT INTO status (status_code, status_message, share_with, date, permissions) VALUES (?, ?, ?, STR_TO_DATE(?, '%d/%m/%Y'), ?);
+
+SHOW TABLES LIKE 'status';
+
+SELECT * FROM status WHERE LOWER(status_message) LIKE LOWER(?);
+

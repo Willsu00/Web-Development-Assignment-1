@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(205, 228, 255);
+}
+h1 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: bold;
+}
+h3 {
+    font-family: 'DM Serif Text', serif;
+}
+.post-labels {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+p, li, a, label{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+button, input[type="submit"] {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    background: rgb(32, 32, 32);
+    color: ghostwhite;
+}
+button:hover {
+    outline: black solid 1px;
+    background: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    transition: all 0.1s ease-in-out;
+}
+
+
+  
